@@ -1,107 +1,122 @@
 <!doctype html>
 <html>
-	<head>
-		<title> 24 six brand </title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+
+<head>
+  <title> 24 six brand </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-	<style>
-	body{
-		background-image:url("images/home.jpg"); 
-		background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-height: 50%;
-  padding-top: 5px;
-  overflow: hidden;
-  background-attachment: fixed;
 
-  
-
-}
-	
-		
-	
-		.top{
-		padding-left:90px;
-		padding-top : 50px;
-		width:100%; height:50px
-		}
-	p{
-		text-align:center;
-		color: #fff;
-		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-		font-size : 30px
-	}	
-	label{
-		text-align:left;
-		color: #fff;
-		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-	}
-		.body{
-		margin: 25px;
-        padding-left: 15px;
-		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-		opacity: inherit;
-		}
-		input[type=text], select, textarea {
-  width: 100%; 
-  padding: 12px; 
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
-  box-sizing: border-box; 
-  margin-top: 6px; 
-  margin-bottom: 16px; 
-  resize: vertical ;
-  ;
-
-}
-input[type=email], select, textarea {
-  width: 100%; 
-  padding: 12px; 
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
-  box-sizing: border-box; 
-  margin-top: 6px; 
-  margin-bottom: 16px; 
-  resize: vertical 
-}
-input[type=number ], select, textarea {
-  width: 100%; 
-  padding: 12px; 
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
-  box-sizing: border-box; 
-  margin-top: 6px; 
-  margin-bottom: 16px; 
-  resize: vertical 
-}
-
-input[type=submit] {
-  background-color: #174b7d;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  align-content:center;
-  margin: 30px;
- }
+  <style>
+    body {
+      background-image: url("images/home.jpg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      height: 50%;
+      padding-top: 5px;
+      overflow: hidden;
+      background-attachment: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
 
 
-	</style>
-	</head>
-	<body>
 
-	
-	
-   
+    }
+
+    label {
+      text-align: left;
+      color: #dfcacab5;
+      margin-bottom: 5px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+
+
+    .formGroup {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+
+    .input {
+      padding: 10px;
+      width: 200px;
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid #fff;
+      font-size: 16px;
+    }
+
+    .button {
+      background-color: #174b7d;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      align-content: center;
+      margin-top: -20px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+
+      margin-bottom: 60px;
+    }
+
+    form {
+      width: 300px;
+
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      opacity: inherit;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+    }
+  </style>
  
-</form>
-	 <a href="sign in.html">
-	<input type="submit" value="REGISTER"></a>
-	
-		</div>
-	</body>
-	</html>
+</head>
+
+<body>
+
+
+
+
+
+  <form class="form">
+    <h2>Sign up</h2>
+    <div class="formGroup">
+      <label for="fname">Username</label>
+      <input type="text" id="username" name="username" class="input" placeholder="Johndoe"><br>
+    </div>
+    <div class="formGroup">
+      <label for="phone">Phone no</label>
+      <input type="text" id="phone" name="phone" class="input" placeholder="Johndoe"><br>
+    </div>
+    <div class="formGroup">
+      <label for="fname">Password</label>
+      <input type="text" id="password" name="password" class="input" placeholder="Johndoe"><br>
+    </div>
+    <div class="formGroup">
+      <label for="fname">Location</label>
+      <input type="text" id="fname" name="location" class="input" placeholder="Johndoe"><br>
+    </div>
+
+    <button class="button" id="button">
+      Register
+    </button>
+  </form>
+  <a href="sign in.html">
+
+    sign in
+  </a>
+
+  </div>
+  <script src="./signIn.js"></script>
+</body>
+
+</html>
